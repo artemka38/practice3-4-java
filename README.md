@@ -1,0 +1,18 @@
+# Практическая работа 1
+
+Типы данных, арифметика и корректный расчёт показателей
+
+Исходный проект намеренно неполный. TODO обозначают места, которые необходимо завершить. До начала работы прочитайте задание и диаграммы. Не исправляйте код случайным подбором до прохождения SelfCheck.
+
+Сборка без Maven
+
+```bash
+mkdir -p out
+javac -encoding UTF-8 -d out $(find src -name "*.java")
+java -cp out ru.edu.pr01.SelfCheck
+```
+
+Для практической работы 11 дополнительно предусмотрена структура Maven и JUnit.
+javac -encoding UTF-8 -d out src\ru\edu\pr01\OrderCalculator.java src\ru\edu\pr01\SelfCheck.java
+java -cp out ru.edu.pr01.SelfCheck
+ДЛЯ ЗАПУСКА У МЕНЯ НА КОМПЬЮТЕРЕ
