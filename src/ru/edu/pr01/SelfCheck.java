@@ -56,5 +56,65 @@ public class SelfCheck {
         } catch (Exception e) {
             System.out.println("FAIL CSV exception " + e.getMessage());
         }
+
+try {
+    System.out.println(
+        OrderCalculator.isValid(1, 100.0, 0)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
+
+try {
+    System.out.println(
+        !OrderCalculator.isValid(0, 100.0, 0)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
+
+try {
+    System.out.println(
+        OrderCalculator.isValid(10_000, 100.0, 15)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
+
+try {
+    System.out.println(
+        !OrderCalculator.isValid(10_001, 100.0, 15)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
+
+try {
+    System.out.println(
+        OrderCalculator.isValid(1, 5_000_000.0, 15)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
+
+try {
+    System.out.println(
+        !OrderCalculator.isValid(1, 100.0, 15.01)
+        ? "PASS"
+        : "FAIL"
+    );
+} catch (Exception e) {
+    System.out.println("FAIL");
+}
     }
 }

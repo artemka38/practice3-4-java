@@ -1,0 +1,29 @@
+digraph C {
+graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.35, ranksep=0.4];
+
+node [
+    shape=record,
+    style="filled",
+    fontname="Times New Roman",
+    fontsize=10,
+    color="#2F5597",
+    fillcolor="#F7FBFF"
+];
+
+a [label="{
+OrderCalculator
+|
+- MAX_DISCOUNT_PERCENT : double\l
+- MIN_DISCOUNT_PERCENT : double\l
+- MAX_QUANTITY : double\l
+- MAX_UNIT_PRICE : double\l
+- MIN_QUANTITY : double\l
+- MIN_UNIT_PRICE : double\l
+|
++ isValid(int, double, double) : boolean\l
++ calculateBase(int, double) : double\l
++ applyDiscount(double, double) : double\l
++ calculateVat(double, double) : double\l
++ calculateTotal(int, double, double, double) : double\l
+}"];
+}
